@@ -18,6 +18,21 @@ def middle_num():
         middle_digit_b = (temp_number % 100 - temp_number % 10)//10
         middle_digit = (middle_digit_a + middle_digit_b)/2
     print(middle_digit)
+    return middle_digit
 
 
-middle_num()
+def collatz(n):
+    list_of_steps = []
+    while n != 1:
+        if n % 2 == 0:
+            n /= 2
+            list_of_steps.append(n)
+        else:
+            n = 3*n+1
+            list_of_steps.append(n)
+
+    print(list_of_steps)
+
+
+middle = middle_num()
+collatz(middle)
