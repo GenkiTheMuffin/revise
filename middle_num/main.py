@@ -10,8 +10,11 @@ def stredne_cislo():
     middle_index = pocet_cifier//2
 
     if pocet_cifier % 2 == 1:
-        for i in range(pocet_cifier, middle_index, 1):
+        for i in range(pocet_cifier, middle_index,):
             temp_cislo //= 10
-    middle_digit = temp_cislo % 10
+            middle_digit = temp_cislo % 10
     print(middle_digit)
     return middle_digit
+
+
+stredne_cislo()
