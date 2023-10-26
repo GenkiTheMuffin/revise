@@ -12,7 +12,7 @@ def middle_num():
             temp_number //= 10
         middle_digit = temp_number % 10
     else:
-        for _ in range(numeral_count - middle_index - 1):
+        for i in range(numeral_count - middle_index - 1):
             temp_number //= 10
         middle_digit_a = temp_number % 10
         middle_digit_b = (temp_number % 100 - temp_number % 10)//10
